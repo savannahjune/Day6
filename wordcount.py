@@ -2,11 +2,6 @@
 Program that opens a file on the command line and counts how many times 
 each space seperated word occurs in that file.
 """
-# from sys import argv
-# script, filename = argv
-
-# make each word a key, and how many times it occurs a value
-
 def remove_punctuation(line):
     punctuation = "!\"#$%&()*+,-./:;<=>?@[\\]^_`{|}~"
     line_no_punc = ""
@@ -43,7 +38,7 @@ def sort_data(dictionary):
             opp_d[value] = [key]
         else: 
             opp_d[value].append(key)
-    # print opp_d
+    print opp_d
     opp_d_keys = opp_d.keys()
     opp_d_keys.reverse()
     # print opp_d_keys 
